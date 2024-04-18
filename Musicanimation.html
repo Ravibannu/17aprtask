@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music animation</title>
+    <style>
+
+h1{
+            margin: 30px;
+            background-color: brown;
+            color: aqua;
+            text-decoration: solid;
+            text-align: center;
+            animation-duration: 5s;
+            position: relative;
+            animation-name: heading;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+            
+            transition: all 2s
+        }
+
+        @keyframes heading {
+            from{
+                background-color: aliceblue;
+                color: chocolate;
+                height: 150px;
+            }
+            to{
+                background-color: darkred;
+                color: orangered;
+                transform: rotateX(360deg);
+                background-image: url(./download.jpeg); 
+                height: 150px;
+                padding-top: 100px;
+                align-items: center;
+                justify-content: center;
+
+            }
+            
+        }
+        h1:hover{
+            color: black;
+    
+      
+            transition-timing-function: ease;
+        }
+
+        .music{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 200px;
+            margin-left: 600px;
+
+        }
+         div{
+            width: 200px;
+            height: 150px;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            
+            justify-content: center;
+            
+            
+            
+         }
+         .col1{
+         background-color: blue;
+         animation: animate1 1s linear infinite;
+         top: 400px;
+         left: 60px;
+         
+
+    }
+    .col2{
+         background-color: red;
+         animation: animate2 1s linear infinite;
+         top: 400px;
+         left: 95px;
+    }
+    .col3{
+         background-color: yellow;
+         animation: animate3 1s linear infinite;
+         top: 400px;
+         left: 130px;
+    }
+    .col4{
+         background-color: green;
+         animation: animate4 2.3s linear infinite;
+         top: 400px;
+         left: 165px;
+    }
+    .col5{
+         background-color: skyblue;
+         animation: animate5 1s linear infinite;
+         top: 400px;
+         left: 200px;
+    }
+    .col6{
+         background-color: gray;
+         animation: animate6 1s linear infinite;
+         top: 400px;
+         left: 235px;
+    }
+    .col7{
+         background-color: purple;
+         animation: animate7 1s linear infinite;
+         top: 400px;
+         left: 270px;
+    }
+    .col8{
+         background-color: black;
+         animation: animate8 1s linear infinite;
+         top: 400px;
+         left: 305px;
+    }
+    .col9{
+         background-color: pink;
+         animation: animate9 1s linear infinite;
+         top: 400px;
+         left: 340px;
+    }
+    @keyframes animate1 {
+        50%{
+            background-color: black;
+            top:100px;
+            height: 160px;
+            
+        }
+    }
+    @keyframes animate2 {
+        50%{
+            background-color: rgb(94, 8, 8);
+            top:50px;
+            height: 210px;
+            bottom: 50px;
+        }
+    }
+    @keyframes animate3 {
+        50%{
+            background-color: rgb(7, 60, 119);
+            top:10px;
+            height: 250px;
+        }
+    }
+    @keyframes animate4 {
+        50%{
+            background-color: rgb(97, 10, 82);
+            top:100px;
+            height: 160px;
+        }
+    }
+    @keyframes animate5 {
+        50%{
+            background-color: rgb(57, 151, 13);
+            top:50px;
+            height: 210px;
+        }
+    }
+    @keyframes animate6 {
+        50%{
+            background-color: rgb(31, 7, 63);
+            top:150px;
+            height: 110px;
+        }
+    }
+    @keyframes animate7 {
+        50%{
+            background-color: rgb(13, 126, 134);
+            top:50px;
+            height: 210px;
+        }
+    }
+    @keyframes animate8 {
+        50%{
+            background-color: rgb(81, 4, 100);
+            top:150px;
+            height: 300px;
+            
+        }
+    }
+    @keyframes animate9 {
+        50%{
+            background-color: rgb(81, 4, 100);
+            top:200px;
+            height: 200px;
+            
+        }
+    }
+    body{
+        background-image: url(./a362273509f7eccdcf362bb73b3b006d.avif);
+    }
+
+
+
+
+
+
+    </style>
+    
+       
+       
+       
+    
+</head>
+<body>
+    
+        
+
+    <h1><marquee behavior="" direction="">Music Animation</marquee></h1>
+    <div class="music">
+        <div class="col1"></div>
+        <div class="col2"></div>
+        <div class="col3"></div>
+        <div class="col4"></div>
+        <div class="col5"></div>
+        <div class="col6"></div>
+        <div class="col7"></div>
+        <div class="col8"></div>
+        <div class="col9"></div>
+    </div>
+    
+    
+    
+    
+</body>
+</html>
